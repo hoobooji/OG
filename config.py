@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7520786912:AAG1yGQ3fUYNSjJ-lJhzZEMLi_3wQ95SBqI")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8207086549:AAGzJJkqAsoIkhu0zc0jTkmX6Sfq_KF35Uo")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "9698652"))
@@ -14,10 +14,10 @@ APP_ID = int(os.environ.get("APP_ID", "9698652"))
 API_HASH = os.environ.get("API_HASH", "b354710ab18b84e00b65c62ba7a9c043")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1003655585616"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1003489581232"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "7328629001"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "7558932006"))
 
 #Port
 PORT = os.environ.get("PORT", "3435")
@@ -100,7 +100,7 @@ USER_REPLY_TEXT = os.environ.get("USER_REPLY_TEXT", "⚠️ Pʟᴇᴀsᴇ ᴜs�
 # Format: CATEGORY_NAMES = ["Category 1", "Category 2", "Category 3", "Category 4"]
 # Build CATEGORY_CHANNELS list - use env vars if set, otherwise use defaults
 CATEGORY_CHANNELS = [
-    int(os.environ.get("CATEGORY_CHANNEL_1", CHANNEL_ID)),
+    int(os.environ.get("CATEGORY_CHANNEL_1", -1003655585616)),
 ]
 
 # Add channel 2 (use env var if set, otherwise use default)
@@ -176,4 +176,5 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
+
 
