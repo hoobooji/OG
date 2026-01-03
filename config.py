@@ -20,7 +20,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1003489581232"))
 OWNER_ID = int(os.environ.get("OWNER_ID", "7558932006"))
 
 #Port
-PORT = os.environ.get("PORT", "3435")
+PORT = os.environ.get("PORT", "5435")
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Kattarhindu:8744001517Ty@goku001.xyozm.mongodb.net/?retryWrites=true&w=majority&appName=goku001")
 DB_NAME = os.environ.get("DATABASE_NAME", "telesbs")
 
@@ -176,6 +176,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
+
 
 
 
